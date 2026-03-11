@@ -15,7 +15,7 @@ export function CTASection() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" variant="secondary" className="gap-2">
-              <a href="tel:+919876543210">
+              <a href="tel:+919009585458">
                 <Phone className="h-4 w-4" />
                 Call Now
               </a>
