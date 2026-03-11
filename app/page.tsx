@@ -12,7 +12,7 @@ export default async function HomePage() {
   
   const { data: menuItems, error: menuError } = await supabase
     .from("menu_items")
-    .select("*, category:menu_categories(*)")
+    .select("*, category:categories(*)")
     .eq("is_available", true)
     .order("created_at", { ascending: false })
     .limit(6)

@@ -15,7 +15,7 @@ export default async function AdminDashboardPage() {
     { count: reviewsCount },
     { count: pendingReviewsCount },
   ] = await Promise.all([
-    supabase.from("menu_categories").select("*", { count: "exact", head: true }),
+    supabase.from("categories").select("*", { count: "exact", head: true }),
     supabase.from("menu_items").select("*", { count: "exact", head: true }),
     supabase.from("gallery_images").select("*", { count: "exact", head: true }),
     supabase.from("contact_messages").select("*", { count: "exact", head: true }),

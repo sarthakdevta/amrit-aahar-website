@@ -64,7 +64,7 @@ export function MenuItemsManager({ initialItems, categories }: MenuItemsManagerP
       const { data: newItem, error } = await supabase
         .from("menu_items")
         .insert([data])
-        .select("*, category:menu_categories(*)")
+        .select("*, category:categories(*)")
         .single()
 
       if (!error && newItem) {

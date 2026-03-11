@@ -27,17 +27,19 @@ export function CategoriesManager({ initialCategories }: CategoriesManagerProps)
     setIsSubmitting(true)
 
     const formData = new FormData(event.currentTarget)
-    const data = {
-      name: formData.get("name") as string,
-      description: formData.get("description") as string || null,
-      sort_order: parseInt(formData.get("sort_order") as string) || 0,
-    }
 
+const name = formData.get("name") as string
+
+const data = {
+  name: name,
+  slug: name.toLowerCase().replace(/\s+/g, "-"),
+  sort_order: parseInt(formData.get("sort_order") as string) || 0,
+}
     const supabase = createClient()
 
     if (editingCategory) {
       const { error } = await supabase
-        .from("menu_categories")
+        .from("categories")
         .update(data)
         .eq("id", editingCategory.id)
 
@@ -50,7 +52,7 @@ export function CategoriesManager({ initialCategories }: CategoriesManagerProps)
       }
     } else {
       const { data: newCategory, error } = await supabase
-        .from("menu_categories")
+        .from("categories")
         .insert([data])
         .select()
         .single()
@@ -71,7 +73,7 @@ export function CategoriesManager({ initialCategories }: CategoriesManagerProps)
 
     const supabase = createClient()
     const { error } = await supabase
-      .from("menu_categories")
+      .from("categories")
       .delete()
       .eq("id", id)
 
@@ -119,17 +121,7 @@ export function CategoriesManager({ initialCategories }: CategoriesManagerProps)
                   required
                 />
               </div>
-              <div className="space-y-2">
-                <label htmlFor="description" className="text-sm font-medium">
-                  Description
-                </label>
-                <Textarea
-                  id="description"
-                  name="description"
-                  defaultValue={editingCategory?.description || ""}
-                  rows={3}
-                />
-              </div>
+              
               <div className="space-y-2">
                 <label htmlFor="sort_order" className="text-sm font-medium">
                   Sort Order

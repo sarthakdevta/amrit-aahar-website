@@ -13,13 +13,13 @@ export default async function MenuPage() {
   const supabase = await createClient()
   
   const { data: categories } = await supabase
-    .from("menu_categories")
+    .from("categories")
     .select("*")
     .order("sort_order")
 
   const { data: menuItems } = await supabase
     .from("menu_items")
-    .select("*, category:menu_categories(*)")
+    .select("*, category:categories(*)")
     .eq("is_available", true)
     .order("sort_order")
 

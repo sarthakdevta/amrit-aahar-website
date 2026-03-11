@@ -7,10 +7,10 @@ export default async function AdminMenuPage() {
   const [{ data: menuItems }, { data: categories }] = await Promise.all([
     supabase
       .from("menu_items")
-      .select("*, category:menu_categories(*)")
+      .select("*, category:categories(*)")
       .order("sort_order"),
     supabase
-      .from("menu_categories")
+      .from("categories")
       .select("*")
       .order("sort_order"),
   ])

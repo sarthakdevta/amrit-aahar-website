@@ -1,5 +1,5 @@
 -- Insert default categories
-INSERT INTO menu_categories (name, slug, display_order) VALUES
+INSERT INTO categories (name, slug, display_order) VALUES
   ('Fast Food', 'fast-food', 1),
   ('South Indian', 'south-indian', 2),
   ('Meals', 'meals', 3),
@@ -8,24 +8,24 @@ ON CONFLICT (slug) DO NOTHING;
 
 -- Insert sample menu items
 INSERT INTO menu_items (name, description, price, category_id, is_available, is_popular) VALUES
-  ('Samosa', 'Crispy fried pastry with spiced potato filling', 15.00, (SELECT id FROM menu_categories WHERE slug = 'fast-food'), true, true),
-  ('Pav Bhaji', 'Spiced mixed vegetable mash served with buttered pav', 80.00, (SELECT id FROM menu_categories WHERE slug = 'fast-food'), true, true),
-  ('Vada Pav', 'Mumbai style spiced potato fritter in a bun', 25.00, (SELECT id FROM menu_categories WHERE slug = 'fast-food'), true, true),
-  ('Chole Bhature', 'Spiced chickpea curry with fried bread', 90.00, (SELECT id FROM menu_categories WHERE slug = 'fast-food'), true, false),
-  ('Paneer Tikka', 'Grilled cottage cheese with spices', 120.00, (SELECT id FROM menu_categories WHERE slug = 'fast-food'), true, false),
-  ('Masala Dosa', 'Crispy rice crepe with spiced potato filling', 70.00, (SELECT id FROM menu_categories WHERE slug = 'south-indian'), true, true),
-  ('Idli Sambhar', 'Steamed rice cakes with lentil soup', 50.00, (SELECT id FROM menu_categories WHERE slug = 'south-indian'), true, false),
-  ('Uttapam', 'Thick rice pancake with vegetables', 60.00, (SELECT id FROM menu_categories WHERE slug = 'south-indian'), true, false),
-  ('Medu Vada', 'Crispy fried lentil donuts', 45.00, (SELECT id FROM menu_categories WHERE slug = 'south-indian'), true, false),
-  ('Rava Dosa', 'Crispy semolina crepe', 75.00, (SELECT id FROM menu_categories WHERE slug = 'south-indian'), true, false),
-  ('Thali', 'Complete meal with dal, sabzi, roti, rice, and more', 150.00, (SELECT id FROM menu_categories WHERE slug = 'meals'), true, true),
-  ('Dal Rice', 'Lentil curry with steamed rice', 80.00, (SELECT id FROM menu_categories WHERE slug = 'meals'), true, false),
-  ('Paneer Rice', 'Cottage cheese curry with rice', 100.00, (SELECT id FROM menu_categories WHERE slug = 'meals'), true, false),
-  ('Masala Chai', 'Traditional Indian spiced tea', 20.00, (SELECT id FROM menu_categories WHERE slug = 'beverages'), true, true),
-  ('Lassi', 'Sweet yogurt drink', 40.00, (SELECT id FROM menu_categories WHERE slug = 'beverages'), true, false),
-  ('Cold Coffee', 'Chilled coffee with cream', 50.00, (SELECT id FROM menu_categories WHERE slug = 'beverages'), true, false),
-  ('Fresh Lime Soda', 'Refreshing lime drink', 35.00, (SELECT id FROM menu_categories WHERE slug = 'beverages'), true, false),
-  ('Mango Shake', 'Fresh mango milkshake', 60.00, (SELECT id FROM menu_categories WHERE slug = 'beverages'), true, false);
+  ('Samosa', 'Crispy fried pastry with spiced potato filling', 15.00, (SELECT id FROM categories WHERE slug = 'fast-food'), true, true),
+  ('Pav Bhaji', 'Spiced mixed vegetable mash served with buttered pav', 80.00, (SELECT id FROM categories WHERE slug = 'fast-food'), true, true),
+  ('Vada Pav', 'Mumbai style spiced potato fritter in a bun', 25.00, (SELECT id FROM categories WHERE slug = 'fast-food'), true, true),
+  ('Chole Bhature', 'Spiced chickpea curry with fried bread', 90.00, (SELECT id FROM categories WHERE slug = 'fast-food'), true, false),
+  ('Paneer Tikka', 'Grilled cottage cheese with spices', 120.00, (SELECT id FROM categories WHERE slug = 'fast-food'), true, false),
+  ('Masala Dosa', 'Crispy rice crepe with spiced potato filling', 70.00, (SELECT id FROM categories WHERE slug = 'south-indian'), true, true),
+  ('Idli Sambhar', 'Steamed rice cakes with lentil soup', 50.00, (SELECT id FROM categories WHERE slug = 'south-indian'), true, false),
+  ('Uttapam', 'Thick rice pancake with vegetables', 60.00, (SELECT id FROM categories WHERE slug = 'south-indian'), true, false),
+  ('Medu Vada', 'Crispy fried lentil donuts', 45.00, (SELECT id FROM categories WHERE slug = 'south-indian'), true, false),
+  ('Rava Dosa', 'Crispy semolina crepe', 75.00, (SELECT id FROM categories WHERE slug = 'south-indian'), true, false),
+  ('Thali', 'Complete meal with dal, sabzi, roti, rice, and more', 150.00, (SELECT id FROM categories WHERE slug = 'meals'), true, true),
+  ('Dal Rice', 'Lentil curry with steamed rice', 80.00, (SELECT id FROM categories WHERE slug = 'meals'), true, false),
+  ('Paneer Rice', 'Cottage cheese curry with rice', 100.00, (SELECT id FROM categories WHERE slug = 'meals'), true, false),
+  ('Masala Chai', 'Traditional Indian spiced tea', 20.00, (SELECT id FROM categories WHERE slug = 'beverages'), true, true),
+  ('Lassi', 'Sweet yogurt drink', 40.00, (SELECT id FROM categories WHERE slug = 'beverages'), true, false),
+  ('Cold Coffee', 'Chilled coffee with cream', 50.00, (SELECT id FROM categories WHERE slug = 'beverages'), true, false),
+  ('Fresh Lime Soda', 'Refreshing lime drink', 35.00, (SELECT id FROM categories WHERE slug = 'beverages'), true, false),
+  ('Mango Shake', 'Fresh mango milkshake', 60.00, (SELECT id FROM categories WHERE slug = 'beverages'), true, false);
 
 -- Insert default contact info
 INSERT INTO contact_info (phone, whatsapp, address, city, state, pincode, google_maps_embed, business_hours) VALUES

@@ -1,5 +1,5 @@
--- Create menu_categories table
-CREATE TABLE IF NOT EXISTS menu_categories (
+-- Create categories table
+CREATE TABLE IF NOT EXISTS categories (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   name TEXT NOT NULL UNIQUE,
   slug TEXT NOT NULL UNIQUE,
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS menu_items (
   description TEXT,
   price DECIMAL(10, 2) NOT NULL,
   image_url TEXT,
-  category_id UUID REFERENCES menu_categories(id) ON DELETE SET NULL,
+  category_id UUID REFERENCES categories(id) ON DELETE SET NULL,
   is_available BOOLEAN DEFAULT TRUE,
   is_popular BOOLEAN DEFAULT FALSE,
   created_at TIMESTAMPTZ DEFAULT NOW(),
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS customer_reviews (
 );
 
 -- Enable Row Level Security
-ALTER TABLE menu_categories ENABLE ROW LEVEL SECURITY;
+ALTER TABLE categories ENABLE ROW LEVEL SECURITY;
 ALTER TABLE menu_items ENABLE ROW LEVEL SECURITY;
 ALTER TABLE gallery_images ENABLE ROW LEVEL SECURITY;
 ALTER TABLE contact_info ENABLE ROW LEVEL SECURITY;
@@ -76,7 +76,7 @@ ALTER TABLE contact_messages ENABLE ROW LEVEL SECURITY;
 ALTER TABLE customer_reviews ENABLE ROW LEVEL SECURITY;
 
 -- Public read access for menu, gallery, contact info, and reviews
-CREATE POLICY "Allow public read access to menu_categories" ON menu_categories FOR SELECT USING (true);
+CREATE POLICY "Allow public read access to categories" ON categories FOR SELECT USING (true);
 CREATE POLICY "Allow public read access to menu_items" ON menu_items FOR SELECT USING (true);
 CREATE POLICY "Allow public read access to gallery_images" ON gallery_images FOR SELECT USING (true);
 CREATE POLICY "Allow public read access to contact_info" ON contact_info FOR SELECT USING (true);
@@ -86,7 +86,7 @@ CREATE POLICY "Allow public read access to customer_reviews" ON customer_reviews
 CREATE POLICY "Allow public to insert contact_messages" ON contact_messages FOR INSERT WITH CHECK (true);
 
 -- Admin policies (authenticated users can manage all data)
-CREATE POLICY "Allow authenticated to manage menu_categories" ON menu_categories FOR ALL USING (auth.role() = 'authenticated');
+CREATE POLICY "Allow authenticated to manage categories" ON categories FOR ALL USING (auth.role() = 'authenticated');
 CREATE POLICY "Allow authenticated to manage menu_items" ON menu_items FOR ALL USING (auth.role() = 'authenticated');
 CREATE POLICY "Allow authenticated to manage gallery_images" ON gallery_images FOR ALL USING (auth.role() = 'authenticated');
 CREATE POLICY "Allow authenticated to manage contact_info" ON contact_info FOR ALL USING (auth.role() = 'authenticated');

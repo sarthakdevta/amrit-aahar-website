@@ -2,9 +2,9 @@
 ALTER TABLE menu_items ADD COLUMN IF NOT EXISTS is_vegetarian BOOLEAN DEFAULT TRUE;
 ALTER TABLE menu_items ADD COLUMN IF NOT EXISTS sort_order INT DEFAULT 0;
 
--- Add missing columns to menu_categories
-ALTER TABLE menu_categories ADD COLUMN IF NOT EXISTS description TEXT;
-ALTER TABLE menu_categories RENAME COLUMN display_order TO sort_order;
+-- Add missing columns to categories
+ALTER TABLE categories ADD COLUMN IF NOT EXISTS description TEXT;
+ALTER TABLE categories RENAME COLUMN display_order TO sort_order;
 
 -- Add missing column to customer_reviews
 ALTER TABLE customer_reviews ADD COLUMN IF NOT EXISTS is_approved BOOLEAN DEFAULT FALSE;
