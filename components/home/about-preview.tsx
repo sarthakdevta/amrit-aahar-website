@@ -20,12 +20,12 @@ export function AboutPreview() {
             <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
               <img
                 src="/images/restaurant-interior.jpg"
-                alt="Amrit Aahar restaurant interior"
+                alt="Client Restaurant Website restaurant interior"
                 className="h-full w-full object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 rounded-xl bg-primary p-6 text-primary-foreground shadow-lg">
-              <p className="text-4xl font-bold">15+</p>
+              <p className="text-4xl font-bold">X+</p>
               <p className="text-sm">Years of Excellence</p>
             </div>
           </div>
@@ -39,7 +39,7 @@ export function AboutPreview() {
               </h2>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Founded in 2010, Amrit Aahar Fast Food Cafe has been serving the community with authentic Indian fast food that brings families together. Our recipes have been passed down through generations, ensuring every dish carries the warmth and tradition of Indian cuisine.
+              Founded in 20XX, Client Restaurant Website Fast Food Cafe has been serving the community with authentic Indian fast food that brings families together. Our recipes have been passed down through generations, ensuring every dish carries the warmth and tradition of Indian cuisine.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               We believe in using only the freshest ingredients and maintaining the highest standards of hygiene to provide you with a dining experience that is both delicious and safe.

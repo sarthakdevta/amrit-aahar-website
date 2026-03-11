@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Amrit Aahar Fast Food Cafe - Delicious Indian Fast Food',
-  description: 'Experience authentic Indian fast food at Amrit Aahar. Fresh ingredients, traditional recipes, and quick service. Visit us today!',
+  title: 'Client Restaurant Website - Delicious Indian Fast Food',
+  description: 'Experience authentic Indian fast food at Client Restaurant Website. Fresh ingredients, traditional recipes, and quick service. Visit us today!',
   generator: 'v0.app',
   icons: {
     icon: [

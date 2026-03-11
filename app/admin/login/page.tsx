@@ -44,7 +44,7 @@ export default function AdminLoginPage() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <Link href="/" className="text-3xl font-bold text-primary">
-            Amrit Aahar
+            Client Restaurant Website
           </Link>
           <p className="text-muted-foreground mt-2">Admin Dashboard</p>
         </div>

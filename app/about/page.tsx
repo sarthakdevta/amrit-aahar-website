@@ -4,8 +4,8 @@ import { Footer } from "@/components/footer"
 import { Check, Award, Users, Heart, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Us - Amrit Aahar Fast Food Cafe",
-  description: "Learn about our story, our commitment to quality, and the passion behind Amrit Aahar Fast Food Cafe.",
+  title: "About Us - Client Restaurant Website",
+  description: "Learn about our story, our commitment to quality, and the passion behind Client Restaurant Website.",
 }
 
 const values = [
@@ -32,7 +32,7 @@ const values = [
 ]
 
 const milestones = [
-  { year: "2010", event: "Amrit Aahar opened its doors with a small menu of 15 items" },
+  { year: "2010", event: "Client Restaurant Website opened its doors with a small menu of 15 items" },
   { year: "2013", event: "Expanded kitchen and introduced 20 new dishes" },
   { year: "2016", event: "Recognized as Best Fast Food in the locality" },
   { year: "2019", event: "Served our 50,000th customer" },
@@ -53,7 +53,7 @@ export default function AboutPage() {
                 Our Story
               </p>
               <h1 className="text-4xl font-bold text-foreground sm:text-5xl text-balance">
-                About Amrit Aahar Fast Food Cafe
+                About Client Restaurant Website
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
                 A family-owned restaurant dedicated to bringing authentic Indian fast food to your table since 2010.
@@ -71,7 +71,7 @@ export default function AboutPage() {
                   Our Journey
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Amrit Aahar Fast Food Cafe was born out of a simple dream - to share the authentic flavors of Indian street food with our community. Founded by the Sharma family in 2010, we started as a small eatery with just a handful of signature dishes.
+                  Client Restaurant Website was born out of a simple dream - to share the authentic flavors of Indian street food with our community. Founded by the Sharma family in 2010, we started as a small eatery with just a handful of signature dishes.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   Over the years, our commitment to quality, taste, and customer satisfaction has helped us grow into one of the most beloved fast food destinations in the area. Our recipes have been passed down through generations, ensuring that every bite carries the warmth and tradition of Indian cuisine.
@@ -84,7 +84,7 @@ export default function AboutPage() {
                 <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted">
                   <img
                     src="/images/about-story.jpg"
-                    alt="The Sharma family in front of Amrit Aahar"
+                    alt="The Sharma family in front of Client Restaurant Website"
                     className="h-full w-full object-cover"
                   />
                 </div>
@@ -99,7 +99,7 @@ export default function AboutPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-foreground">Our Values</h2>
               <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-                These core values guide everything we do at Amrit Aahar
+                These core values guide everything we do at Client Restaurant Website
               </p>
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -158,7 +158,7 @@ export default function AboutPage() {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-6">Our Promise to You</h2>
               <p className="text-primary-foreground/80 leading-relaxed mb-8">
-                At Amrit Aahar, we promise to always serve you food that is fresh, hygienic, and made with the finest ingredients. We treat every customer like family and strive to make your dining experience memorable.
+                At Client Restaurant Website, we promise to always serve you food that is fresh, hygienic, and made with the finest ingredients. We treat every customer like family and strive to make your dining experience memorable.
               </p>
               <ul className="grid gap-4 sm:grid-cols-2 text-left max-w-xl mx-auto">
                 {[

@@ -10,10 +10,10 @@ export function Footer() {
 
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-primary">Amrit Aahar</h3>
+            <h3 className="text-xl font-bold text-primary">Client Restaurant Website</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Fresh and delicious fast food served with hygiene and quality. 
-              Visit Amrit Aahar Fast Food Cafe for authentic taste and quick service.
+              Visit Client Restaurant Website for authentic taste and quick service.
             </p>
           </div>
 
@@ -93,7 +93,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-10 border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Amrit Aahar Fast Food Cafe
+            © {new Date().getFullYear()} Client Restaurant Website
           </p>
 
           <Link

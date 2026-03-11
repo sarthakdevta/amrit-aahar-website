@@ -6,8 +6,8 @@ import { ContactForm } from "@/components/contact/contact-form"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Contact Us - Amrit Aahar Fast Food Cafe",
-  description: "Get in touch with Amrit Aahar Fast Food Cafe. Find our location, hours, and send us a message.",
+  title: "Contact Us - Client Restaurant Website",
+  description: "Get in touch with Client Restaurant Website. Find our location, hours, and send us a message.",
 }
 
 export default async function ContactPage() {

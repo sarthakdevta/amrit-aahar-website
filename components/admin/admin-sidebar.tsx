@@ -73,7 +73,7 @@ export function AdminSidebar({ user }: AdminSidebarProps) {
           {/* Logo */}
           <div className="p-6 border-b border-border">
             <Link href="/admin" className="flex items-center gap-2">
-              <span className="text-xl font-bold text-primary">Amrit Aahar</span>
+              <span className="text-xl font-bold text-primary">Client Restaurant Website</span>
             </Link>
             <p className="text-xs text-muted-foreground mt-1">Admin Dashboard</p>
           </div>

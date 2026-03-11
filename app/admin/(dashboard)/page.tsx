@@ -64,7 +64,7 @@ export default async function AdminDashboardPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
         <p className="text-muted-foreground mt-1">
-          Welcome to the Amrit Aahar Admin Dashboard
+          Welcome to the Client Restaurant Website Admin Dashboard
         </p>
       </div>
 

@@ -5,8 +5,8 @@ import { Footer } from "@/components/footer"
 import { GalleryGrid } from "@/components/gallery/gallery-grid"
 
 export const metadata: Metadata = {
-  title: "Gallery - Amrit Aahar Fast Food Cafe",
-  description: "Take a visual tour of our restaurant, dishes, and happy customers at Amrit Aahar Fast Food Cafe.",
+  title: "Gallery - Client Restaurant Website",
+  description: "Take a visual tour of our restaurant, dishes, and happy customers at Client Restaurant Website.",
 }
 
 export default async function GalleryPage() {
@@ -32,7 +32,7 @@ export default async function GalleryPage() {
                 Our Gallery
               </h1>
               <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-                Take a peek into our kitchen, delicious dishes, and the warm ambiance of Amrit Aahar
+                Take a peek into our kitchen, delicious dishes, and the warm ambiance of Client Restaurant Website
               </p>
             </div>
           </div>

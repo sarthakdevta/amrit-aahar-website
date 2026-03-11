@@ -10,7 +10,7 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <p className="text-sm font-medium uppercase tracking-wider text-primary">
-                Welcome to Amrit Aahar
+                Welcome to Client Restaurant Website
               </p>
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance">
                 Authentic Indian Fast Food, Made Fresh Daily

@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { MenuDisplay } from "@/components/menu/menu-display"
 
 export const metadata: Metadata = {
-  title: "Our Menu - Amrit Aahar Fast Food Cafe",
+  title: "Our Menu - Client Restaurant Website",
   description: "Explore our delicious menu featuring authentic Indian fast food items - samosas, chaats, biryanis, and more!",
 }
 
