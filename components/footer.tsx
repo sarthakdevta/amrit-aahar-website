@@ -67,7 +67,7 @@ export function Footer() {
             </div>
 
             <a
-              href="https://wa.me/90095 85458"
+              href="https://wa.me/9009585458"
               target="_blank"
               className="text-sm text-primary hover:underline"
             >
