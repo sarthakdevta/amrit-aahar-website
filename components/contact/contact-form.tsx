@@ -89,7 +89,7 @@ export function ContactForm() {
               id="email"
               name="email"
               type="email"
-              placeholder="your.email@example.com"
+              placeholder="your.email@gmail.com"
               required
             />
           </div>
@@ -102,7 +102,7 @@ export function ContactForm() {
               id="phone"
               name="phone"
               type="tel"
-              placeholder="+91 96301 55945"
+              placeholder="+91 90095 85458"
             />
           </div>
 
