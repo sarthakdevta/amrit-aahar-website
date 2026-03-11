@@ -37,7 +37,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
-          <a href="tel:+919630155945" className="flex items-center gap-2 text-sm font-medium text-foreground/80">
+          <a href="tel:+919009585458" className="flex items-center gap-2 text-sm font-medium text-foreground/80">
             <Phone className="h-4 w-4" />
             090095 85458
           </a>
@@ -71,7 +71,7 @@ export function Navbar() {
               </Link>
             ))}
             <a
-              href="tel:+919630155945"
+              href="tel:+919009585458"
               className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-foreground/80"
             >
               <Phone className="h-4 w-4" />

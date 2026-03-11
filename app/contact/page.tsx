@@ -57,7 +57,7 @@ export default async function ContactPage() {
                       <div>
                         <h3 className="font-semibold text-foreground">Address</h3>
                         <p className="text-muted-foreground">
-                          {contactInfo?.address || "Shop no 01, Vaibhav Merrige Garden, Kolar Rd, MP Nagar, Lalita Nagar, Kolar Rd, Bhopal, Madhya Pradesh 462042"}
+                          {contactInfo?.address || "Bairagarh, Chichali Kolar, Bhopal, Madhya Pradesh, India 462042"}
                         </p>
                       </div>
                     </div>

@@ -50,9 +50,9 @@ export function Footer() {
                 target="_blank"
                 className="text-sm text-muted-foreground hover:text-primary"
               >
-                Shop no 01, Vaibhav Merige Garden,  
-                Kolar Rd, Lalita Nagar,  
-                Bhopal, Madhya Pradesh 462042
+                Bairagarh, Chichali Kolar,
+Bhopal, Madhya Pradesh,
+India 462042
               </a>
             </div>
 

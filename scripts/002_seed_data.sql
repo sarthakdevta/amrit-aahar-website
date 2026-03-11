@@ -32,9 +32,7 @@ INSERT INTO contact_info (phone, whatsapp, address, city, state, pincode, google
   (
     '090095 85458',
     '9190095 85458',
-    'Shop no 01, Vaibhav Merige Garden, Kolar Rd, MP Nagar, Lalita Nagar, Kolar Rd',
-    'Bhopal',
-    'Madhya Pradesh',
+    'Bairagarh, Chichali Kolar, Bhopal, Madhya Pradesh, India,
     '462042',
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.5899999999997!2d77.4399999!3d23.2099999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAmrit+Aahar+Fast+Food+Cafe!5e0!3m2!1sen!2sin!4v1234567890',
     '{"monday": "9:00 AM - 10:00 PM", "tuesday": "9:00 AM - 10:00 PM", "wednesday": "9:00 AM - 10:00 PM", "thursday": "9:00 AM - 10:00 PM", "friday": "9:00 AM - 10:00 PM", "saturday": "9:00 AM - 10:00 PM", "sunday": "9:00 AM - 10:00 PM"}'
