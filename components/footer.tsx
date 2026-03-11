@@ -67,12 +67,12 @@ export function Footer() {
             </div>
 
             <a
-              href="https://wa.me/9009585458"
-              target="_blank"
-              className="text-sm text-primary hover:underline"
-            >
-              Chat on WhatsApp
-            </a>
+  href="https://wa.me/919009585458"
+  target="_blank"
+  className="text-sm text-primary hover:underline"
+>
+  Chat on WhatsApp
+</a>
           </div>
 
           {/* Opening Hours */}
