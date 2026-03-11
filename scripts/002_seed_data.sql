@@ -30,8 +30,8 @@ INSERT INTO menu_items (name, description, price, category_id, is_available, is_
 -- Insert default contact info
 INSERT INTO contact_info (phone, whatsapp, address, city, state, pincode, google_maps_embed, business_hours) VALUES
   (
-    '096301 55945',
-    '919630155945',
+    '090095 85458',
+    '9190095 85458',
     'Shop no 01, Vaibhav Merige Garden, Kolar Rd, MP Nagar, Lalita Nagar, Kolar Rd',
     'Bhopal',
     'Madhya Pradesh',

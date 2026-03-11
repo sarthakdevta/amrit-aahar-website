@@ -62,12 +62,12 @@ export function Footer() {
                 href="tel:+919630155945"
                 className="text-sm text-muted-foreground hover:text-primary"
               >
-                096301 55945
+                090095 85458
               </a>
             </div>
 
             <a
-              href="https://wa.me/919630155945"
+              href="https://wa.me/90095 85458"
               target="_blank"
               className="text-sm text-primary hover:underline"
             >

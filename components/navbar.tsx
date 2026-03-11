@@ -39,7 +39,7 @@ export function Navbar() {
         <div className="hidden items-center gap-4 md:flex">
           <a href="tel:+919630155945" className="flex items-center gap-2 text-sm font-medium text-foreground/80">
             <Phone className="h-4 w-4" />
-            096301 55945
+            090095 85458
           </a>
           <Button asChild>
             <Link href="/contact">Order Now</Link>
@@ -75,7 +75,7 @@ export function Navbar() {
               className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-foreground/80"
             >
               <Phone className="h-4 w-4" />
-              096301 55945
+              090095 85458
             </a>
             <div className="pt-2">
               <Button asChild className="w-full">
