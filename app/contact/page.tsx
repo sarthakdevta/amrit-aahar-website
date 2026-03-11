@@ -68,10 +68,10 @@ export default async function ContactPage() {
                       <div>
                         <h3 className="font-semibold text-foreground">Phone</h3>
                         <a
-                          href={`tel:${contactInfo?.phone || "+919876543210"}`}
+                          href={`tel:${contactInfo?.phone || "+919009585458"}`}
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                          {contactInfo?.phone || "+91 98765 43210"}
+                          {contactInfo?.phone || "+91 9009585458"}
                         </a>
                       </div>
                     </div>
@@ -82,10 +82,10 @@ export default async function ContactPage() {
                       <div>
                         <h3 className="font-semibold text-foreground">Email</h3>
                         <a
-                          href={`mailto:${contactInfo?.email || "info@amritaahar.com"}`}
+                          href={`mailto:${contactInfo?.email || "sarthakpersonal755@gmail.com"}`}
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                          {contactInfo?.email || "info@amritaahar.com"}
+                          {contactInfo?.email || "sarthakpersonal755@gmail.com"}
                         </a>
                       </div>
                     </div>
